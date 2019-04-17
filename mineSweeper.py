@@ -305,7 +305,7 @@ def checkWinLose(r,c):
 
 
     # prevent double count
-    if displayBoard[r][c] == hiddenSpot:
+    if displayBoard[r][c] == hiddenSpot or displayBoard[r][c] == flagSpot:
         revealed += 1
     
     if displayBoard[r][c] == flagSpot:
